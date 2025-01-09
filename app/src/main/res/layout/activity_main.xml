@@ -20,19 +20,20 @@
 
     <Button
         android:id="@+id/button"
-        style="?android:attr/borderlessButtonStyle"
         android:layout_width="320dp"
         android:layout_height="55dp"
         android:layout_marginBottom="50dp"
         android:background="@drawable/button"
-        android:fontFamily="@font/noto_sans_kr"
-        android:fontVariationSettings="'wght' 900"
-        android:text="구글 로그인"
-        android:textFontWeight="1000"
+        android:fontFamily="@font/font"
+        android:text="@string/start"
         android:textColor="#121313"
+        android:textFontWeight="700"
         android:textSize="18sp"
+        android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:style="?android:attr/borderlessButtonStyle" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
