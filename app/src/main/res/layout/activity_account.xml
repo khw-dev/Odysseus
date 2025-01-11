@@ -1,0 +1,68 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F59E41"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    tools:context=".Account">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:text="@string/welcome_msg"
+        style="@style/basic"
+        android:textSize="28sp"
+        android:textFontWeight="800"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="123dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/enter_nick"
+        android:text="@string/enter_nickname"
+        style="@style/basic"
+        android:textSize="15sp"
+        android:textFontWeight="500"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/welcome" />
+
+    <EditText
+        android:id="@+id/nickname"
+        android:hint="@string/nickname"
+        android:autofillHints="username"
+        style="@style/edit"
+        android:textSize="20sp"
+        android:textFontWeight="700"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/edit_text"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enter_nick" />
+
+    <Button
+        android:id="@+id/create_account"
+        android:text="@string/create_account"
+        style="@style/basic"
+        android:textSize="18sp"
+        android:textFontWeight="500"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

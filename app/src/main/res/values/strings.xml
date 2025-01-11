@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">PPET</string>
+    <string name="logo">logo</string>
+
     <string name="start">시작하기</string>
+
+    <string name="create_account">계정 생성하기</string>
+    <string name="welcome_msg">처음 오셨군요!</string>
+    <string name="enter_nickname">다른 사람들에게 표시될 이름을 정해주세요</string>
+    <string name="nickname">다람쥐 헌 쳇바퀴에 타고파</string>
 </resources>

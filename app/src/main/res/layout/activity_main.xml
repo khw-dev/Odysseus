@@ -6,10 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F59E41"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/logo"
+        android:contentDescription="@string/logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -19,17 +22,15 @@
         app:srcCompat="@drawable/ppet_logo" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="320dp"
+        android:id="@+id/startBtn"
+        android:text="@string/start"
+        style="@style/basic"
+        android:textSize="18sp"
+        android:textFontWeight="500"
+        android:layout_width="0dp"
         android:layout_height="55dp"
         android:layout_marginBottom="50dp"
         android:background="@drawable/button"
-        android:fontFamily="@font/font"
-        android:text="@string/start"
-        android:textColor="#121313"
-        android:textFontWeight="700"
-        android:textSize="18sp"
-        android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
